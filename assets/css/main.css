@@ -1,6 +1,7 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
 :root{
     --mainFont:"Poppins", sans-serif;
     --subFont:"Inter", sans-serif;
@@ -10,6 +11,7 @@
 body{
 font-family:  var(--mainFont);
 }
+/* navbar start */
 .navbar{
     background-color:#fff;
     position: sticky;
@@ -64,7 +66,84 @@ font-family:  var(--mainFont);
     display: none;
 }
 }
+/* navbar end */
 
+/* Testimonials start */
+.Testimonials{
+    padding: 40px 0px;
+} 
+.Testimonials h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: Mada;
+    font-size: 30px;
+}
+.Testimonials .row{
+    gap: 40px;
+}
+.Testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:20px ;
+    width: calc(( 100% - 40px ) / 2 );
+    box-shadow: 0px 8.237px 8.237px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    position: relative;
+    
+
+}
+.Testimonial::after{
+    content:'';
+    border-top: 70px solid #F4F4F4;
+    border-left: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.user-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.user-info{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.Testimonial .user-info .user-details span{
+    font-size: 13px;
+    color: #969696;
+}
+.Testimonial .rating img {
+    width: 25px;
+    height: 25px;
+    margin: 20px 0;
+}
+.Testimonial .rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.Testimonial blockquote q {
+    color: #646464;
+}
+.Testimonial blockquote  p {
+    display:inline-block;
+    padding: 0px 5px;
+}
+/* Testimonials end */
+
+/* footer start */
 .footer{
     display: flex;
     background-color: #393E46;
@@ -125,3 +204,4 @@ font-family:  var(--mainFont);
 .footer a{
     color: #F4F4F4;
 }
+/* footer end */
