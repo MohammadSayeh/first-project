@@ -19,6 +19,7 @@ font-family:  var(--mainFont);
 }
 .navbar .logo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap:10px
 }
@@ -37,7 +38,6 @@ font-family:  var(--mainFont);
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    list-style: none;
     gap: 20px;
 }
 .navs ul li a {
@@ -63,4 +63,65 @@ font-family:  var(--mainFont);
 .navs{
     display: none;
 }
+}
+
+.footer{
+    display: flex;
+    background-color: #393E46;
+    color: #F4F4F4;
+    padding: 80px 0px;
+}
+.footer .row{
+    gap: 50px;
+    align-items: flex-start;
+}
+.footer-end , .footer-start{
+    width: calc(50% - 40px );
+}
+.footer-start{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-start p {
+    font-size: 15px;
+    font-weight: 300;
+    
+
+}
+.footer .logo img{
+    width: 40px;
+    height: 40px;
+}
+.footer .footer-start .icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer .footer-start .icons img{
+    height: 30px;
+    width: 30px;
+    border: solid 2px #fff;
+    padding: 5px;
+}
+.footer-item h2{
+        padding-bottom: 15px;
+}
+.footer-item {
+    flex-direction: column;
+    gap: 30px;    
+}
+
+.footer-item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+}
+.footer a{
+    color: #F4F4F4;
 }

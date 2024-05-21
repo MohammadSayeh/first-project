@@ -9,10 +9,16 @@
 }
 .row{       
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-}
+        align-items: center;
+    }
 
 a{
 text-decoration: none;
 }
+ul{
+    list-style: none;
+}
+
+
